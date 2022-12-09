@@ -55,6 +55,27 @@ function TodoProvider(props) {
     saveTodos(auxTodos);
   };
 
+  let menuItems = [
+    {icon:"🌞", text:"Para Hoy", active:false},
+    {icon:"🚬", text:"Cigarrillos", active:false},
+    {icon:"📅", text:"Tareas", active:true},
+]
+  const [page, setPage] = React.useState(menuItems)
+
+  const changePage = (page) => {
+    let auxPages = [...menuItems]
+    let pos = auxPages.findIndex(x => x.text === page);
+    for (let index = 0; index < auxPages.length; index++) {
+      const element = auxPages[index];
+      if(index === pos ){
+        element.active = true;
+      }else{
+        element.active = false;
+      }
+    }
+    setPage(auxPages)
+    // console.log(page)
+  }
   return (
     <TodoContext.Provider
       value={{
@@ -71,6 +92,8 @@ function TodoProvider(props) {
         showList,
         openModal,
         setOpenModal,
+        page,
+        changePage,
       }}
     >
       {props.children}
