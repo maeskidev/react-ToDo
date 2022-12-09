@@ -1,5 +1,6 @@
 import React from "react";
 import { TodoContext } from "../../TodoContext";
+import "./todoForm.css";
 
 function TodoForm() {
   const [newTodoValue, setNewTodoValue] = React.useState("");
@@ -21,18 +22,20 @@ function TodoForm() {
 
   return (
     <form onSubmit={onAdd}>
-      <label>...</label>
       <textarea
-        placeholder="Descripcion de la tarea"
+        placeholder="Agregar tarea"
         value={newTodoValue}
         onChange={onChange}
       />
-      <div>
+      <button type="submit" className="btnAddTask">
+        ➕
+      </button>
+
+      {/* <div>
         <button type="button" onClick={onCancel}>
           Cancelar
         </button>
-        <button type="submit">Añadir</button>
-      </div>
+      </div> */}
     </form>
   );
 }

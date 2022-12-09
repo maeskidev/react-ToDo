@@ -10,13 +10,13 @@ function Menu({children}){
     //     {icon:"📅", text:"Tareas"},
     // ]
 
-    const {page,changePage} = React.useContext(TodoContext);
+    const {page,changePage,showMenu} = React.useContext(TodoContext);
 
     const cambiar = (pagina) => {
         changePage(pagina)
     }
     return (
-        <div className="menuContainer">
+        <div className={`menuContainer ${!showMenu && 'hiddenMenu'}`}>
 
             {children[0]}
 

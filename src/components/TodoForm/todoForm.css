@@ -1,0 +1,31 @@
+@import url(../../index.css);
+
+form {
+    display: grid;
+    position: relative;
+}
+
+textarea{
+    border-radius: 5px ;
+    height: 70px;
+    width: 290px;
+    background-color: var(--clean-bg-color);
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.btnAddTask{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    
+}

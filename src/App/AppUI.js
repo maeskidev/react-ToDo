@@ -9,6 +9,7 @@ import { Modal } from "../modal/index";
 import { TodoForm } from "../components/TodoForm";
 import { Menu } from "../components/menu/Menu";
 import { Cigarettes } from "../components/Cigarettes/Cigarettes";
+import { MenuBtn } from "../components/menu/MenuBtn";
 
 function AppUI() {
   const value = React.useContext(TodoContext);
@@ -20,6 +21,8 @@ function AppUI() {
         <TodoCounter key="counter"/>
         <TodoSearch/>
       </Menu>
+      
+      <MenuBtn></MenuBtn>
 
 
 
@@ -51,7 +54,9 @@ function AppUI() {
         )
       }
 
-      <CreateTodoButton setOpenModal={value.setOpenModal} />
+      {value.page[2].active && (
+          <CreateTodoButton setOpenModal={value.setOpenModal} />
+      )}
 
       {value.openModal && (
         <Modal>

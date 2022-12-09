@@ -1,13 +1,10 @@
-:root{
-    --dark-bg-color: #faf9f8;
-    --clean-bg-color: white;
-    --text-color: black;
-    --subTitle: #b8b8b8;
-    --primary-color :#2564cf;
-}
+@import url(../../index.css);
 
-.title{
+
+.titleCigarettes{
     padding: 50px 20px;
+    color: var(--items-text-color);
+
 }
 
 .cigarettesContainer{
@@ -22,8 +19,17 @@
 
 .cigarettes-grid {
     display: grid;
+    border-radius: 10px;
+    background-color: rgb(255 255 255 / 13%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(80px);
     height: 100%;
+    width: 80%;
     grid-template-rows: 1fr 1fr 2fr;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px #00000059; */
 }
 
 .cigarettes-today{
@@ -72,5 +78,5 @@
 .cigarettes-stats{
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #00000059;
+    
 }

@@ -8,7 +8,7 @@ function TodoList(props) {
   return (
     <>
       <section className={`TodoList ${showList && "TodoListOpen"}`}>
-        <h1> Tareas 📅</h1>
+        <h1 className="titleList"> Tareas 📅</h1>
         {filterTodos.length === 0
           ? "No se encontraron tareas .."
           : props.children}

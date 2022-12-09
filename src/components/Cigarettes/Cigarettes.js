@@ -4,7 +4,7 @@ import './cigarettes.css'
 function Cigarettes() {
     return (
         <section className={'cigarettesContainer'}>
-            <h1 className="title">Cigarrillos 🚬</h1>
+            <h1 className="titleCigarettes">Cigarrillos 🚬</h1>
             <div className="cigarettes-grid">
                 <span className="cigarettes-today">2/3</span>
                 <div className="cigarettes-controls">

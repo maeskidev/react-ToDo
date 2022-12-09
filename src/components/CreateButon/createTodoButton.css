@@ -1,9 +1,5 @@
-:root{
-    --dark-bg-color: #faf9f8;
-    --clean-bg-color: white;
-    --text-color: black;
-    --subTitle: #b8b8b8;
-}
+@import url(../../index.css);
+
 
 .btnAdd{
     border-radius: 100%;

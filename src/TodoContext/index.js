@@ -17,6 +17,7 @@ function TodoProvider(props) {
   let filterTodos = [];
 
   const [openModal, setOpenModal] = React.useState(false);
+  const [showMenu, setShowMenu] = React.useState(true);
 
   if (searchValue.length < 1) {
     filterTodos = todos;
@@ -94,6 +95,8 @@ function TodoProvider(props) {
         setOpenModal,
         page,
         changePage,
+        showMenu,
+        setShowMenu
       }}
     >
       {props.children}

@@ -1,8 +1,8 @@
-:root{
-    --dark-bg-color: #faf9f8;
-    --clean-bg-color: white;
-    --text-color: black;
-    --subTitle: #b8b8b8;
+@import url(../../index.css);
+
+.titleList{
+    color: var(--items-text-color);
+    padding: 0px 0px;
 }
 
 .TodoList{
@@ -15,27 +15,16 @@
     padding: 50px 20px;
     position: relative;
     transition: all .5s;
+    background-image: url("https://images.saymedia-content.com/.image/ar_3:2%2Cc_limit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_960/MTkyNjYzMTEwNjYxMTg2OTk2/aesthetic-mac-wallpapers.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
-/* .TodoListOpen{
-    transform: translateY( calc(calc(100vh / 6) * -4.5));
-}
+@media (max-width: 800px) {
+    .title{
+        color: var(--text-color);
+    }
 
-.TodoListToggleClose{
-    cursor: pointer;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
 }
-
-.TodoListToggleOpen{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    box-shadow: 0px 0px 10px #00000040;
-    height: 35px;
-} */
