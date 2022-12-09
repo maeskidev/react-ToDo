@@ -1,0 +1,35 @@
+.TodoList{
+    grid-column: 1 / 7;
+    grid-row: 6 / 7;
+    overflow: auto;
+    height: calc(calc(100vh / 6) * 6);
+    border-radius:20px ;
+    background-color: #FFFFFF;
+    box-shadow: 0px -10px 20px #00000050;
+    padding: 50px 20px;
+    position: relative;
+    transition: all .5s;
+}
+
+
+.TodoListOpen{
+    transform: translateY( calc(calc(100vh / 6) * -4.5));
+}
+
+.TodoListToggleClose{
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.TodoListToggleOpen{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 0px 10px #00000040;
+    height: 35px;
+}

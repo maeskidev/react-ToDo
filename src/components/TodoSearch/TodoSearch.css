@@ -1,0 +1,26 @@
+.todoSearchInput{
+    border-radius: 5px;
+    height:32px;
+    border: none;
+    margin: 20px auto;
+    grid-column: 1 / 7;
+    grid-row: 5 / 6;
+    border: 1px solid #315aff;
+    color: #315aff;
+    text-align: center;
+    transition: all .5s;
+}
+
+.todoSearchInput:focus{
+    /* transform: translateY(-560px); */
+    position: fixed;
+    top:0%;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.todoSearchInputOpen{
+    /* transform: translateY(-560px); */
+    /* position: fixed; */
+    top:0%;
+}
