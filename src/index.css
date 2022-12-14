@@ -50,6 +50,30 @@ body {
   grid-template-rows: repeat(6, calc(100vh / 6)); */
 }
 
+.d-flex{
+  display: flex;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.margin-auto{
+  margin: auto;
+}
+
+.position-relative{
+  position: relative;
+}
+
 @media (max-width: 800px) {
 
   #root {

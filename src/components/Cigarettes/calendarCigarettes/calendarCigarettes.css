@@ -1,0 +1,12 @@
+.cigarettes-stats h2 {
+    margin-top: 0;
+}
+
+.cigarettes-stats{
+    align-self: start;
+    padding: 0 20px;
+}
+
+.tableCigarettes{
+    width: 100%;
+}
